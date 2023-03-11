@@ -1,4 +1,4 @@
-package org.sid.cinema.dao;
+package org.sid.cinema.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,7 +19,7 @@ public class  Salle implements Serializable {
     private String name;
     private int nombrePlace;
     @ManyToOne
-    private  Cinema cinema;
+    private Cinema cinema;
     @OneToMany(mappedBy = "salle")
     private Collection<Place> places;
     @OneToMany(mappedBy = "salle")
