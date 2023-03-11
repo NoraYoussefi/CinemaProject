@@ -17,7 +17,7 @@ public class Seance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSeance;
-    @Temporal(TemporalType.TIMESTAMP)    //definir la format de la date juste heure
+    @Temporal(TemporalType.TIME)    //definir la format de la date juste heure
     private Date heureDebut;
 
 }
